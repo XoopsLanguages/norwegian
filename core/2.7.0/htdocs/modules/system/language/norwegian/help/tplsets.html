@@ -1,0 +1,36 @@
+<div class="outer" id="help-template">
+<h1 class="head">Hjelp: Maler</h1>
+<h4 class="odd">Beskrivelse</h4>
+<p class="even">
+        XOOPS tillater et visst skille mellom den faktiske presentasjonen av nettstedet («<em>hud</em>” eller brukergrensesnitt) og koden som kjører på baksiden. Den første håndteres av en sofistikert mekanisme basert på grafiske temaer. Et tema kan inkludere, i sin grunnleggende form, den essensielle HTML-koden
+        maler som definerer det visuelle grensesnittet til nettstedet, samt stilarkene og bildene som trengs for å utfylle det visuelle grensesnittet. Temaer kan byttes i det administrative grensesnittet, så å endre hele utseendet til et XOOPS-nettsted er det bare et spørsmål om å endre verdien til en
+        velger og klikker på "Godta". XOOPS gir også nettstedadministratorer muligheten til å la brukere velge blant noen tilgjengelige temaer.<br/><br/>
+
+        Generelt sett, en <strong><em>tema</em></strong> er det visuelle rammeverket på høyt nivå for et nettsted: temaet definerer for eksempel den generelle utformingen av nettstedet; på den annen side definerer den vanligvis ikke den spesifikke distribusjonen av innhold i en blokk. Dette håndteres av en
+        annen enhet kalt en <em><strong>malsett</strong></em>. Et malsett<em> </em>er et ensemble av HTML-maler som definerer presentasjonen av innhold innenfor alle blokkene som danner et XOOPS-nettsted. Hvis vi ønsker en tydeligere metafor for dette, kan vi si at temaet er som
+        arkitekten til et hus, mens malsettet er som interiørarkitekten. Den første setter veggene og definerer den generelle fordelingen, men det er den andre som har ansvaret for "<em>dressing</em>” de veggene.<br/><br/>
+
+        Hvis det aktive temaet er enkelt som bare inkluderer en temafil, CSS-filer og noen bilder, bruker XOOPS standard malsett for å definere presentasjonen av blokker. Noen komplekse temaer er imidlertid sofistikerte nok til å inkludere sitt eget malsett. I dette tilfellet nettstedet
+        administrator må bruke det administrative grensesnittet for å angi både temaet og malsettet. <br/><br/>
+
+        Hvordan er temaet <em>magi</em> oppnådd? Det vil si, hvordan kan HTML-maler inkludere dynamisk innhold? Dette gjøres ikke med speil og røyk, men med en smart malmotor kalt
+        <strong><a href="https://www.smarty.net/" rel="external">Smarty</a></strong> som gjør funksjonen til det som pleide å bli kalt
+        <em><strong>variabel interpolasjon</strong></em>. Uttrykt på en enkel måte kan vi si at XOOPS-systemet bruker PHP-filer for å holde logikken til modulene (tilgang til databasen, tildeling av variabler, administrasjon av rettigheter...), HTML-filer med Smarty-variabler satt inn for å administrere
+        faktiske visuelle grensesnittet, og Smarty-motoren for å sette inn verdier og strenger på spesifikke steder i HTML-en som bygger sidene sett av sluttbrukeren. Alt i alt, hva dette betyr for deg kan enkelt oppsummeres: takket være temasystemet, lar XOOPS nettsteddesignere bygge mer
+        interessante og visuelt imponerende nettsteder uten mye bekymring for hva som skjer under panseret.
+    </p>
+<h4 class="odd">Kloning og nedlasting av malsett</h4>
+<p class="even">
+        Hvis du vil lage et egendefinert malsett, kan du lage en kopi av standardsettet (eller et hvilket som helst annet) ved å velge '<em>klone</em>’-kobling (du vil bli bedt om å gi det nye settet et navn). I motsetning til standard, kan andre malsett fritt redigeres. Du kan også lagre en kopi av en
+        mal satt til disk ved å velge '<em>last ned</em>'-koblingen, eller fjern den med '<em>slett</em>’ lenke. Du kan også noen ganger se en ekstra '<em>Generer</em>’ lenke ved siden av nye moduler som det ennå ikke er opprettet maler for.
+    </p>
+<h4 class="odd">Redigere maler</h4>
+<p class="even">
+        Du kan se en fullstendig liste over tilgjengelige maler ved å bla gjennom katalogens trevisning. Når du velger en mal, vil XOOPS åpne den i et redigeringsprogram hvor du kan redigere den. <br/><br/>
+
+        Mens du redigerer maler må du aktivere en preferanse som automatisk oppdaterer modulmal .tpl-filer hvis det er nyere filer under temaene/ditt tema/maler-katalogen for gjeldende tema (Systemmodul -&gt; Innstillinger -&gt; Generelle innstillinger -&gt; Oppdater modulmal .tpl-filer
+        fra katalogen temaer/tema/maler? -&gt; '<em>Ja</em>’). Dette bør slås av når siden blir offentlig.<br/><br/>
+        Hvis du ved et uhell roter til en mal, ikke glem at du kan hente en '<em>bra</em>’ kopi fra standard malsett. Hvis du jobber med maler som ikke er standard, kan det være en god idé å lagre en kopi på disk før du begynner å endre dem.
+
+    </p>
+</div>
