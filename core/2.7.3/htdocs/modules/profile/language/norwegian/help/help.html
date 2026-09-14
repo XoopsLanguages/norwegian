@@ -1,0 +1,50 @@
+<div class="outer" id="help-template">
+<h1 class="head">Hjelp: <a class="ui-corner-all tooltip" href="&lt;{$xoops_url}&gt;/modules/profile/admin/index.php" title="Back to the Administration of Profile"> Profil <img alt="Back to the Administration of Profile" src="&lt;{xoAdminIcons 'home.png'}&gt;"/></a></h1>
+ -----Hjelpeinnhold ---------- 
+<h4 class="odd">BESKRIVELSE</h4>
+<p class="even">Profilmodulen er for å administrere tilpassede brukerprofilfelt.</p>
+<h4 class="odd">INSTALLERE/AVINSTALLERE</h4>
+<p>Ingen spesielle tiltak nødvendig, følg standard installasjonsprosess – pakk ut mappen /profile inn i ../modules-katalogen. Installer modulen via Admin -&gt; Systemmodul -&gt; Moduler.</p>
+<p>Detaljerte instruksjoner for installasjon av moduler er tilgjengelig i <a href="https://www.gitbook.com/book/xoops/xoops-operations-guide/" target="_blank" title="XOOPS Operations Manual">Brukerhåndbok for XOOPS</a> <br/><br/></p>
+<h4 class="odd">DRIFTSINSTRUKSJONER</h4>
+<p class="even">For å sette opp denne modulen må du:</p>
+<ul>
+<li>Konfigurer preferansene dine for modulen (se ‘Innstillinger’) og eventuelt profilblokken hvis du har tenkt å bruke den (se ‘Blokker’).</li>
+<li>Rediger eksisterende kategorier eller legg til nye.</li>
+<li>Rediger eksisterende felt eller legg til nye. Her kan du angi hvilke felt som skal være synlige i hvilken kategori, og om de skal være synlige under brukerregistrering.</li>
+<li>Definer rekkefølgen på registreringstrinn.</li>
+<li>Og til slutt kan du angi tillatelser for individuelle felt - hvilke som er redigerbare, hvilke er søkbare.<br/><br/></li>
+</ul>
+<h4 class="odd">Anti-Spam-tiltak</h4>
+<p class="even">For å minimere søppelpostregistreringer, gjør følgende:</p>
+<ul>
+<li> gå til Protector-modulen i Admin, gå til Preferences, og deretter nederst, ved dette alternativet:
+
+            "Stopp forumspam"
+            Sjekker POST-data mot spammere registrert på www.stopforumspam.com-databasen. <br/>
+            Sett den til "Forby IP (ingen grense)"
+        </li>
+<br/>
+<li> i /class/captcha/config.php, sørg for at modusen er satt som "tekst":<br/><br/>
+<span style="font-style: italic;">     returner $config = array(<br/>
+    'disabled' =&gt; usant, // Deaktiver CAPTCHA<br/>
+    'mode' =&gt; 'tekst', // standardmodus, du kan velge 'tekst', 'bilde', 'recaptcha' (krever api-nøkkel)<br/>
+    'name' =&gt; 'xoopscaptcha', // captcha-navn<br/>
+    'skipmember' =&gt; sant, // Hopp over CAPTCHA-sjekk for medlemmer<br/>
+    'maxattempts' =&gt; 10, // Maksimalt antall forsøk for hver økt<br/>
+    );</span></li>
+<br/>
+<li> I profilmodulen, gå til Admin og i det grunnleggende trinnet som ligger på:<br/>
+
+            /modules/profile/admin/step.php?id=1<br/>
+
+            sett "Lagre etter stopp" til "Nei"
+        </li>
+<br/><br/>
+<li> I Profilinnstillinger, sett alternativet "Bruk Captcha etter det andre registreringstrinnet" til "Ja" (det er standard)</li>
+<br/>
+<ul>
+<h4 class="odd">TUTORIAL</h4>
+<p class="even">Opplæring kommer snart.<br/></p>
+ -----Hjelpeinnhold ---------- 
+</ul></ul></div>

@@ -1,0 +1,59 @@
+<div class="outer" id="help-template">
+<h1 class="head">Hjelp: Innstillinger</h1>
+<h4 class="odd">Beskrivelse</h4>
+<p class="even">
+        Preferansepanelene er der du konfigurerer innstillingene for hele nettstedet. Det er verdt å ta seg tid til å jobbe gjennom dem siden noen innstillinger kan ha en betydelig innvirkning på ytelsen, sikkerheten og brukervennligheten til nettstedet ditt.
+    </p>
+<h4 class="odd">Generelle innstillinger</h4>
+<p class="even">
+        Dette er de viktigste og mest brukte innstillingene. Du vil angi nettstedsnavnet og slagordet for nettstedet ditt. Du vil også velge standard tema og administrasjonsgrensesnitt. Og hvis du trenger å jobbe med nettstedet ditt, kan du lukke det for alle brukere. Du kan også angi modulomfattende cache
+        ganger.
+    </p>
+<h4 class="odd">Metakoder og bunntekst</h4>
+<p class="even">
+        Metakoder gir informasjon om informasjonen din – de beskriver innholdet til nettstedet ditt. Hovedbruken deres er å hjelpe søkemotorer og robotene deres med å indeksere nettstedet ditt på riktig måte, det vil si å hjelpe de rette menneskene med å finne det. Informasjonen du oppgir er inkludert i overskriften på hver nett
+        side. Det skal representere innholdet på nettstedet som helhet - metainformasjonen er den samme på hver side, den kan for øyeblikket ikke tilpasses for forskjellige moduler eller sider.<br/><br/>
+
+        Vær oppmerksom på at de store søkemotorene bruker forskjellige strategier for å indeksere nettsteder. De kan legge ulike vektinger på metakoder eller til og med ignorere dem fullstendig. Forsiktig bruk av metainformasjon kan hjelpe nettstedet ditt til å oppnå bedre søkemotorrangeringer, og det er nyttig å søke
+        informasjon om indekseringsstrategiene til de dominerende henvisningene dine (se loggfilen for nettstedet ditt). Dette kan hjelpe deg med å optimalisere metainformasjonen din eller andre aspekter av nettstedets design og innhold for å forbedre rangeringene dine. <br/><br/>
+
+        Prøv å være nøyaktig og ærlig når du gir metainformasjon. Ikke prøv å<em>manipulere</em>’ søkemotorer for å få en bedre rangering – de kan gjenkjenne denne oppførselen og nettstedet ditt kan bli nedgradert eller svartelistet fra deres indeks.
+
+        <br/><br/>Den <strong>Meta Copyright</strong> og <strong>Bunntekst</strong> -feltene støtter begge to erstatningskoder for å forenkle vedlikeholdet.
+        <br/> - <strong>{X_SITEURL}</strong> vil bli erstattet av den fullstendige URL-en til nettstedets hovedside.
+        <br/> - <strong>{X_YEAR}</strong> vil bli erstattet av det gjeldende firesifrede året. Det eliminerer behovet for å oppdatere den øvre opphavsrettsdatoen hvert år.
+    </p>
+<h4 class="odd">Alternativer for ordsensurering</h4>
+<p class="even">
+        XOOPS kan automatisk sensurere uønskede ord som kan bli lagt ut av besøkende på nettstedet ditt og erstatte dem med en generisk, alternativ term etter eget valg. Sensurfunksjonen bruker noen systemressurser og kan redusere nettstedet ditt noe. Den er deaktivert som standard.<br/><br/>
+
+        For å implementere sensur på nettstedet ditt, velg '<em>aktiver</em>’ radioknapp. Du må legge inn en liste over uønskede ord i<em>ord å sensurere</em>’-boksen, som skiller dem med pipetegnet. Denne funksjonen skiller ikke mellom store og små bokstaver. Skriv inn en passende erstatningsterm i '<em>erstatte
+            vonde ord med</em>’-boksen. Standard er #OOPS#.
+
+    </p>
+<h4 class="odd">Søkealternativer</h4>
+<p class="even">
+        Søkefunksjonen er et av de viktigste verktøyene for å finne informasjon på et portalnettsted. XOOPS-søket kategoriserer resultater etter modul – poster identifiseres som nyheter, nedlastinger, lenker eller andre typer i henhold til modulene du har installert. <br/><br/>
+
+        Globale søk av alle ressurser på nettstedet ditt er aktivert som standard. Hvis du deaktiverer globale søk, vil denne funksjonen ikke lenger være tilgjengelig, og søkeblokken vil ikke fungere.
+        Standard minimum søkeordlengde for søk er fem tegn. Alle vilkår som er kortere vil bli ignorert. Dette er nyttig for å kontrollere presisjonen av søk, men ikke mye bruk for termer som "nettstedskart". Korte søkeord har en tendens til å være mer vanlige, så de har en tendens til å gi en større
+        antall poster, hvorav mange kan være irrelevante. Lengre søkeord har en tendens til å hente færre poster, men med en høyere grad av presisjon.<br/><br/>
+
+        Søking er relativt dyrt i beregningsmessige termer, og derfor vil det å utelukke korte termer redusere belastningen på serveren. Men husk at noen ganger er det nyttig å kunne søke etter en kort sikt.
+
+    </p>
+<h4 class="odd">E-postoppsett</h4>
+<p class="even">
+        Denne delen av kontrollpanelet brukes til å konfigurere e-posten din for systemet. Det anbefales at du lar e-postleveringsmetoden stå på standardinnstillingen "PHP (post)". Du trenger ikke fylle ut Sendmail- eller SMTP-feltene med mindre du bruker et alternativt e-postleveringsalternativ.
+    </p>
+<h4 class="odd">Autentiseringsalternativer</h4>
+<p class="even">
+        Bare la det ligge i Xoops Database, så kan du ignorere alle de andre alternativene der.<br/><br/>
+
+        LDAP- eller Microsoft Active Directory-servere er lagt til for autentisering som et alternativ til vanlige Xoops-brukere. Årsaken er at i mange bedrifter har du allerede en brukerdatabase i ADS eller LDAP, og de kan bruke den til å logge på XOOPS og trenger ikke registrere enda en konto.
+    </p>
+<h4 class="odd">Systemmodulinnstillinger</h4>
+<p class="even">
+        Her kan du aktivere/deaktivere hver av Systemseksjonene, samt spesifisere systemomfattende standardinnstillinger, f.eks. for antall viste avatarer eller bilder per side. Du kan også velge en standardredigerer for blokker, kommentarer og for alle moduler.
+    </p>
+</div>
